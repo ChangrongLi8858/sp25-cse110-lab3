@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSE110 Lab2: Team Meeting Record</title>
+  </head>
+  <body>
+    <header>
+      <h1>Team Meeting Record</h1>
+      <nav>
+        <ul>
+          <li>Summary</li>
+          <li>Agenda</li>
+          <li>Multimedia</li>
+          <li>Feedback</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="Summary">
+        <h2>Summary</h2>
+        <p>Following is the basic information of this meeting</p>
+        <ul>
+          <li>Meeting Date:04/12/2025 </li>
+          <li>Meeting Place: Online</li>
+          <li>Present Members:Fabio Ruhland; James Forest; Moises Mendoza; Changrong li; Evan Wu; Nimai Kasibatla; Paz Mogrelia; Sriharsha Kavuri; Xiuwen Zhu</li>
+        </ul>
+        <hr>
+      </section>
+
+      <details>
+        <summary>Highlights</summary>
+        <p>Decided to use the way of "passing phone challenge" for the team introduction video</p>
+        <p>Decided the team name and theme as "GIT COMMITMENT ISSUES"</p>
+      </details>
+
+      <section id="Agenda">
+        <h2>Agenda</h2>
+        <ol>
+          <li>Discussion team brand, web page, video</li>
+          <li>Set a time for the next meeting</li>
+        </ol>
+        <hr>
+      </section>
+
+      <section id="Feedback">
+        <h2>Feedback Form</h2>
+        <form action="#">
+          <fieldset>
+            <legend>Meeting Feedback</legend>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            
+            <label for="studentId">Student ID:</label>
+            <input type="text" id="studentId" name="studentId">
+            <br><br>
+            
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+            <br><br>
+            
+            <label for="nextMeetingTime">Desired Time for Next Meeting:</label>
+            <input type="text" id="nextMeetingTime" name="nextMeetingTime">
+            <br><br>
+            
+            <p>Preferred Format for Next Meeting:</p>
+            <input type="radio" id="online" name="meetingFormat" value="online">
+            <label for="online">Online</label><br>
+            
+            <input type="radio" id="offline" name="meetingFormat" value="offline">
+            <label for="offline">Offline</label><br>
+            
+            <input type="radio" id="otherFormat" name="meetingFormat" value="other">
+            <label for="otherFormat">Other:</label>
+            <input type="text" id="otherFormatText" name="otherFormatText" placeholder="Please specify">
+            <br><br>
+            
+            <p>Any suggestions for meeting improvement?</p>
+            <input type="radio" id="progressSlow" name="meetingSuggestion" value="progressSlow">
+            <label for="progressSlow">Progress is too slow, speed up!</label><br>
+            
+            <input type="radio" id="progressFast" name="meetingSuggestion" value="progressFast">
+            <label for="progressFast">Progress is too fast, can't keep up!</label><br>
+            
+            <input type="radio" id="suggestionOther" name="meetingSuggestion" value="other">
+            <label for="suggestionOther">Other:</label>
+            <input type="text" id="suggestionOtherText" name="suggestionOtherText" placeholder="Please specify">
+            <br><br>
+            
+            <button type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+
+
+
+</main>
+</body> 
+</html>
