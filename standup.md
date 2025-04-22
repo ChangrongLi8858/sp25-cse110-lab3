@@ -1,7 +1,6 @@
 # Standup Notes Template
 
 
----
 
 ## Date And Time
 2025-04-18
@@ -28,6 +27,7 @@
 - try to learn
 
 ## Notifications
+
 -rest more
 
 ## Yesterday
@@ -41,7 +41,13 @@
 
 
 
+## Yesterday
+- finished group project--warm up--card project
 
+## Today
+- finish lab 3
+
+## Blockers
+- time limit
 
 ---
-
