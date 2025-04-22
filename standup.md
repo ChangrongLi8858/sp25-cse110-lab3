@@ -9,10 +9,10 @@
 - @Changrong Li
 - @Amanda
 - @Bob
-- @Calvin  
+- @Calvin
 
 ## Meeting Type
-- online and offline
+- lectue and online meeting
 
 ## Materials
 - lectures
@@ -27,7 +27,19 @@
 - try to learn
 
 ## Notifications
--nothing
+
+-rest more
+
+## Yesterday
+- finished group project--warm up--card project
+
+## Today
+- finish lab 3
+
+## Blockers
+- time limit
+
+
 
 ## Yesterday
 - finished group project--warm up--card project
