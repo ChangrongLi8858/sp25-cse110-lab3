@@ -7,26 +7,39 @@
 2025-04-18
 
 ## Participants
-- @member1  
-- @member2  
+- @Changrong Li
+- @Amanda
+- @Bob
+- @Calvin
 
 ## Meeting Type
-- 
+- lectue and online meeting
 
 ## Materials
-- 
+- lectures
 
 ## Goals and Process
-- 
+- finish homework labs
 
 ## Important Topics
--
+- how to use css
 
 ## Action Items
--
+- try to learn
 
 ## Notifications
--
+-rest more
+
+## Yesterday
+- finished group project--warm up--card project
+
+## Today
+- finish lab 3
+
+## Blockers
+- time limit
+
+
 
 
 
