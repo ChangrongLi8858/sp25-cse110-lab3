@@ -1,9 +1,348 @@
-/* style.css */
 body {
-    background-color: #333;
-    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; 
+    background: #fff;
+    color: #333;
   }
-  h1 {
-    color: #fafafa;
+  
+  h1, h2, h3 {
+    font-family: 'Winky Rough', cursive;
+    margin: 0.5em 0;
   }
+  
+  header {
+    text-align: center;
+    padding: 1em 0;
+  }
+  header h1 {
+    font-size: 3rem;  
+  }
+  header .date {
+    font-size: 1.25rem;
+    color: #666;
+  }
+ 
+  /*navigation*/
+  nav {
+    background: #eee;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+    padding: 0;
+    margin: 0.5em 0;
+  }
+  nav li {
+    margin: 0 1em;
+  }
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  nav a:hover {
+    color: rgb(255, 255, 255);  
+  }
+
+  nav a:active {
+    background-color: blue; 
+    color: white;          
+  }
+  
+  /*title*/
+  main {
+    padding: 1em;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  section h2 {
+    text-align: left;
+  }
+  
+  #participants h2 { color: red; }
+  #Summary h2      { color: orange; }
+  #Agenda h2       { color: rgb(217, 217, 0); }
+  #Multimedia h2   { color: green; }
+  #Feedback h2     { color: rgb(0, 172, 172); }
+  #internal-demo h2     { color: blue; }
+  #units-demo h2     { color: purple; }
+  #text-demo h2     { color: brown; }
+  #display-demo h2  { color: coral; }
+  #sizing-demo h2  { color: gold; }
+  
+  /* participant*/
+  #participants ul {
+    display: grid;                            
+    grid-template-columns: repeat(2, 1fr);    
+    gap: 0.5em 1em;                           
+    list-style: none;                         
+    padding: 0;                                
+    margin: 0;                                
+  }
+  #participants li {
+    background: rgba(255, 0, 0, 0.1); 
+    padding: 0.5em;
+    border-radius: 4px;
+  }
+  
+  
+  /*feedback*/
+  .btn-submit {
+    background: lightblue;
+    color: black;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .btn-submit:hover {
+    background: darkblue;
+    color: white;
+  }
+
+  .btn-submit {
+    border: 2px solid black; 
+}
+
+
+#units-demo {  
+    & .unit-percent {
+      width: 50%;
+      background: rgba(128, 0, 128, 0.171);
+      margin-bottom: 0.5em;
+    }
+    & .unit-rem {
+      font-size: 2rem;
+      background: rgba(128, 0, 128, 0.137);
+      margin-bottom: 0.5em;
+    }
+    & .unit-em {
+      padding: 1em;
+      background: rgba(128, 0, 128, 0.274);
+      margin-bottom: 0.5em;
+    }
+  
+    & .unit-px {
+      height: 50px;
+      background: rgba(128, 0, 128, 0.39);
+      margin-bottom: 0.5em;
+    }
+    & .unit-pt {
+      padding: 0.5pt;
+      border: 1px solid rgba(128, 0, 128, 0.479);
+      margin-bottom: 0.5em;
+    }
+    & .unit-cm {
+      border: 0.5cm solid rgba(128, 0, 128, 0.634);
+      padding: 0.5em;
+      margin-bottom: 0.5em;
+    }
+  }
+  
+
+
+#text-demo {
+    & .text-color {
+      color: brown;
+      margin-bottom: 0.5em;
+    }
+
+    & .underline {
+      text-decoration: underline;
+    }
+    & .strikethrough {
+      text-decoration: line-through;
+    }
+  
+    & .text-align {
+      text-align: center;
+    }
+  }
+  
+    
+  #display-demo {
+    border: 2px solid coral;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+
+  
+    & .hide {
+      display: none;
+    }
+    & .inline-demo {
+      display: inline;
+      background: #f0f0f0;
+      margin-right: 0.5em;
+    }
+    & .inline-block-demo {
+      display: inline-block;
+      background: #e0e0e0;
+      padding: 0.25em;
+      margin-right: 0.5em;
+    }
+    & .block-demo {
+      display: block;
+      background: #d0d0d0;
+      padding: 0.5em;
+      margin-bottom: 0.5em;
+    }
+  }
+
+/*size*/
+  .sizing-demo {
+    width: 80%;        
+    height: 100px;     
+    max-width: 200px;   
+    min-width: 100px;   
+    background: gold;
+    margin: 0 auto; 
+    padding: 0.5em;
+  }
+  
+
+footer {
+    position: relative;
+    margin-top: 2em;
+    background: #fafafa;
+    text-align: center;
+    padding: 0.5em 0;
+    color: rgb(63, 63, 145);
+  }
+
+  @media (max-width: 600px) {
+    #participants ul {
+      grid-template-columns: 1fr;  
+    }
+
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.2em 0.5em;
+    }
+    
+  }
+
+  #position h2 {
+    color: #8DB600;
+  }
+  #position {
+    border: 2px solid #8DB600;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+  }
+  
+  .container {
+    position: relative;
+    height: 100px;
+    background: #f0fff0;
+    margin-bottom: 1em;
+  }
+  
+  .relative {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: rgba(141, 182, 0, 0.2);
+    padding: 0.5em;
+  }
+  
+  .absolute {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(141, 182, 0, 0.2);
+    padding: 0.5em;
+  }
+
+
+
+  section:has(details) {
+    background-color: rgb(240, 222, 179);
+  }
+
+/*boarder*/
+#participants {
+    border: 2px solid red;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+  }
+
+  #Summary {
+    border: 2px solid orange;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+  }
+  
+  #Agenda {
+    border: 2px solid rgb(217, 217, 0);
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+  }
+  
+  #Multimedia {
+    border: 2px solid green;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+  }
+  
+  #Feedback {
+    border: 2px solid rgb(0, 172, 172);
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+  }
+  
+  #internal-demo {
+    border: 2px solid blue;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+  }
+  
+  #units-demo {
+    border: 2px solid purple; 
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+  }
+
+  #text-demo {
+    border: 2px solid brown;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+  }
+
+  #display-demo {
+    border: 2px solid coral;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+  }
+
+  #sizing-demo {
+    border: 2px solid gold;
+    padding: 1em;
+    border-radius: 4px;
+    margin-bottom: 1.5em;
+  }
+  
+  main {
+    padding-bottom: 4em;
+  }
+  
   
