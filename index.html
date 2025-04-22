@@ -1,120 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CSE110 Lab2: Team Meeting Record</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Team Meeting Record</h1>
-      <nav>
-        <ul>
-          <li>Summary</li>
-          <li>Agenda</li>
-          <li>Multimedia</li>
-          <li>Feedback</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section id="Summary">
-        <h2>Summary</h2>
-        <p>Following is the basic information of this meeting</p>
-        <ul>
-          <li>Meeting Date:04/12/2025 </li>
-          <li>Meeting Place: Online</li>
-          <li>Present Members:Fabio Ruhland; James Forest; Moises Mendoza; Changrong li; Evan Wu; Nimai Kasibatla; Paz Mogrelia; Sriharsha Kavuri; Xiuwen Zhu</li>
-        </ul>
-        <hr>
-      </section>
+<head>
+  <meta charset="UTF-8">
+  <title>CSE110 Lab3: Team Meeting Record</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Winky+Rough&display=swap" rel="stylesheet">
+  <style>
+    .internal-demo {
+      border: 2px dashed rgb(0, 88, 252);
+      padding: 0.5em;
+      margin: 1em 0;
+    }
+  </style>
+</head>
+<body>
 
+  <header>
+    <h1 style="color: rgb(0, 0, 0); font-weight: bold;">Lab 3 - Team Record</h1>
+    <p class="date">2025-04-21</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#participants">Participants</a></li>
+      <li><a href="#Summary">Summary</a></li>
+      <li><a href="#Agenda">Agenda</a></li>
+      <li><a href="#Multimedia">Video and Audio Record of Meeting Audio</a></li>
+      <li><a href="#Feedback">Feedback Form</a></li>
+      <li><a href="#internal-demo">Internal CSS Demo</a></li>
+      <li><a href="#units-demo">Units Demo</a></li>
+      <li><a href="#text-demo">Text Demo</a></li>
+      <li><a href="#display-demo">Display Demo</a></li>
+      <li><a href="#sizing-demo">Sizing Demo</a></li>
+      <li><a href="#position">position</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="participants">
+      <h2>Participants</h2>
+      <ul>
+        <li><strong>Changrong Li</strong></li>
+        <li>Amanda</li>
+        <li>Bob</li>
+        <li>Calvin</li>
+      </ul>
+      <hr>
+    </section>
+
+    <section id="Summary">
+      <h2>Summary</h2>
+      <p>Following is the basic information of this meeting</p>
+      <ul>
+        <li>Meeting Date: 04/12/2025</li>
+        <li>Meeting Place: Online</li>
+        <li>Present Members: Fabio Ruhland; James Forest; Moises Mendoza; Changrong Li; Evan Wu; Nimai Kasibatla; Paz Mogrelia; Sriharsha Kavuri; Xiuwen Zhu</li>
+      </ul>
       <details>
         <summary>Highlights</summary>
         <p>Decided to use the way of "passing phone challenge" for the team introduction video</p>
         <p>Decided the team name and theme as "GIT COMMITMENT ISSUES"</p>
       </details>
+      <hr>
+    </section>
 
-      <section id="Agenda">
-        <h2>Agenda</h2>
-        <ol>
-          <li>Discussion team brand, web page, video</li>
-          <li>Set a time for the next meeting</li>
-        </ol>
-        <hr>
-      </section>
+    <section id="Agenda">
+      <h2>Agenda</h2>
+      <ol>
+        <li>Discussion team brand, web page, video</li>
+        <li>Set a time for the next meeting</li>
+      </ol>
+      <hr>
+    </section>
 
-      <section id="Multimedia">
-        <h2>Video and Audio Record of Meeting Audio</h2>
-        <audio controls>
-          <source src="multimedia/meeting_audio.MP3" type="audio/MP3">
-          Your browser does not support the audio element
-        </audio>
-        <br>
-        <video controls width="400">
-          <source src="multimedia/meeting_video.mp4" type="video/mp4">
-          Your browser does not support the video element
-        </video>
-        <hr>
-      </section>
-    
+    <section id="Multimedia">
+      <h2>Video and Audio Record of Meeting Audio</h2>
+      <audio controls>
+        <source src="multimedia/meeting_audio.MP3" type="audio/MP3">
+        Your browser does not support the audio element
+      </audio>
+      <br>
+      <video controls width="400">
+        <source src="multimedia/meeting_video.mp4" type="video/mp4">
+        Your browser does not support the video element
+      </video>
+      <hr>
+    </section>
 
-      <section id="Feedback">
-        <h2>Feedback Form</h2>
-        <form action="#">
-          <fieldset>
-            <legend>Meeting Feedback</legend>
-            
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
-            <br><br>
-            
-            <label for="studentId">Student ID:</label>
-            <input type="text" id="studentId" name="studentId">
-            <br><br>
-            
-            <label for="date">Date:</label>
-            <input type="date" id="date" name="date">
-            <br><br>
-            
-            <label for="nextMeetingTime">Desired Time for Next Meeting:</label>
-            <input type="text" id="nextMeetingTime" name="nextMeetingTime">
-            <br><br>
-            
-            <p>Preferred Format for Next Meeting:</p>
-            <input type="radio" id="online" name="meetingFormat" value="online">
-            <label for="online">Online</label><br>
-            
-            <input type="radio" id="offline" name="meetingFormat" value="offline">
-            <label for="offline">Offline</label><br>
-            
-            <input type="radio" id="otherFormat" name="meetingFormat" value="other">
-            <label for="otherFormat">Other:</label>
-            <input type="text" id="otherFormatText" name="otherFormatText" placeholder="Please specify">
-            <br><br>
-            
-            <p>Any suggestions for meeting improvement?</p>
-            <input type="radio" id="progressSlow" name="meetingSuggestion" value="progressSlow">
-            <label for="progressSlow">Progress is too slow, speed up!</label><br>
-            
-            <input type="radio" id="progressFast" name="meetingSuggestion" value="progressFast">
-            <label for="progressFast">Progress is too fast, can't keep up!</label><br>
-            
-            <input type="radio" id="suggestionOther" name="meetingSuggestion" value="other">
-            <label for="suggestionOther">Other:</label>
-            <input type="text" id="suggestionOtherText" name="suggestionOtherText" placeholder="Please specify">
-            <br><br>
-            
-            <button type="submit">Submit</button>
-          </fieldset>
-        </form>
-      </section>
+    <section id="Feedback">
+      <h2>Feedback Form</h2>
+      <form action="#">
+        <fieldset>
+          <legend>Meeting Feedback</legend>
 
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name"><br><br>
 
+          <label for="studentId">Student ID:</label>
+          <input type="text" id="studentId" name="studentId"><br><br>
 
-</main>
-<footer>
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date"><br><br>
+
+          <label for="nextMeetingTime">Desired Time for Next Meeting:</label>
+          <input type="text" id="nextMeetingTime" name="nextMeetingTime"><br><br>
+
+          <p>Preferred Format for Next Meeting:</p>
+          <input type="radio" id="online" name="meetingFormat" value="online">
+          <label for="online">Online</label><br>
+          <input type="radio" id="offline" name="meetingFormat" value="offline">
+          <label for="offline">Offline</label><br>
+          <input type="radio" id="otherFormat" name="meetingFormat" value="other">
+          <label for="otherFormat">Other:</label>
+          <input type="text" id="otherFormatText" name="otherFormatText" placeholder="Please specify"><br><br>
+
+          <button type="submit" class="btn-submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+
+    <section id="internal-demo">
+      <h2>Internal CSS Demo</h2>
+      <div class="internal-demo">
+        This sentence is styled by an internal &lt;style&gt; block.
+      </div>
+    </section>
+
+    <section id="units-demo">
+      <h2>Units Demo</h2>
+      <div class="unit-percent">
+        width: 50% (relative unit)
+      </div>
+      <div class="unit-rem">
+        font-size: 2rem (relative unit)
+      </div>
+      <div class="unit-em">
+        padding: 1em (relative unit)
+      </div>
+      <div class="unit-px">
+        height: 50px (absolute unit)
+      </div>
+      <div class="unit-pt">
+        padding: 0.5pt (absolute unit)
+      </div>
+      <div class="unit-cm">
+        border: 0.5cm solid purple (rgba(128, 0, 128, 0.634)) (absolute unit)
+      </div>
+    </section>
+
+    <section id="text-demo">
+      <h2>Text Demo</h2>
+
+      <p class="text-color">
+        This text is brown (color).
+      </p>
+
+      <p>
+        <span class="underline">This is underlined.</span><br>
+        <span class="strikethrough">This is strikethrough.</span>
+      </p>
+
+      <p class="text-align">
+        This paragraph is centered (text-align).
+      </p>
+    </section>
+
+    <section id="display-demo">
+      <h2>Display Demo</h2>
+
+      <p class="hide">actually u shouldn’t see me!:D (display: none)</p>
+
+      <p>
+        <span class="inline-demo">Inline-demo</span>
+        <span class="inline-block-demo">Inline-block-demo</span>
+      </p>
+
+      <p class="block-demo">Block-demo (display: block)</p>
+    </section>
+
+    <section id="sizing-demo">
+      <h2>Sizing Demo</h2>
+      <div class="sizing-demo">
+        This box has width: 80%, height: 100px, max-width: 200px, min-width: 100px.
+      </div>
+    </section>
+
+    <section id="position">
+      <h2>Position Demo</h2>
+
+      <div class="container">
+        <div class="relative">
+          Relative (top:20px; left:20px)
+        </div>
+        <div class="absolute">
+          Absolute (top:20px; right:20px)
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
     <p>© 2025 Team Meeting Record. All rights reserved.</p>
   </footer>
-  
-</body> 
+
+</body>
 </html>
